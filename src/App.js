@@ -11,10 +11,12 @@ import Header from "./Header";
 function App() {
   return (
     <div className="app">
+      <Header />
       <Router>
         <Routes>
-          <Route path="/" element={<Header />} />
-          <Route path="/" element={<Home />} />
+          <Route>
+            <Route path="/" element={<Home />} />
+          </Route>
         </Routes>
       </Router>
     </div>
